@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./src/output.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sen:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        sen: ['Sen', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#FFB900',
+                        secondary: '#171100',
+                        'text-color': '#5F5B53',
+                        'bg-cream': '#FFFCF4',
+                    },
+                    maxWidth: {
+                        'main': '1170px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+        }
+    </style>
+    <title>RRF Education</title>
+</head>
+
+<body class="font-poppins">
+    <!-- Header -->
+    <header class="bg-bg-cream sticky top-[-28px] z-10">
+        <div class="max-w-main mx-auto">
+            <div class="flex items-center py-[36px] pb-2">
+                <!-- logo -->
+                <img src="./src/img/logo.svg" alt="Lesson.">
+                <!-- nav -->
+                <nav class="ml-auto">
+                    <ul class="flex">
+                        <li class="relative">
+                            <a href="#!"
+                                class="px-[21px] py-2 text-secondary text-[1.6rem] font-semibold after:absolute after:left-[21px] after:bottom-[6px] after:w-3 after:h-0.5 after:bg-secondary after:rounded-[1px]">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                class="px-[21px] py-2 text-text-color text-[1.6rem] hover:text-secondary hover:font-semibold">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                class="px-[21px] py-2 text-text-color text-[1.6rem] hover:text-secondary hover:font-semibold">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#!"
+                                class="px-[21px] py-2 text-text-color text-[1.6rem] hover:text-secondary hover:font-semibold">Reviews</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- button action -->
+                <div class="ml-[49px]">
+                    <a href="#!"
+                        class="inline-block min-w-[144px] px-4 leading-[50px] text-white text-center text-[1.6rem] font-semibold rounded-full bg-secondary hover:opacity-90">Sign
+                        Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero -->
+        <div class="bg-bg-cream py-[56px] pb-[65px]">
+            <div class="max-w-main mx-auto">
+                <div class="flex">
+                    <!-- Hero left -->
+                    <div class="relative w-[48%]">
+                        <img src="./src/img/hero-img.jpg" alt="Learn without limits and spread knowledge."
+                            class="w-[470px] h-[685px] object-cover rounded-[20px]">
+
+                        <div
+                            class="absolute bottom-12 right-0 w-[270px] p-6 bg-white rounded-xl shadow-[0px_16px_32px_0px_rgba(0,0,0,0.05)]">
+                            <!-- item1 -->
+                            <div class="flex items-center">
+                                <div class="flex justify-center items-center w-12 h-12 rounded-full bg-[#FFF9E8]">
+                                    <img src="./src/icon/des.svg" alt="">
+                                </div>
+
+                                <div class="ml-4">
+                                    <p class="text-text-color text-[1.4rem]">20 Courses</p>
+                                    <p class="text-[1.8rem] font-semibold text-secondary">UI/UX Design</p>
+                                </div>
+                            </div>
+
+                            <!-- item2 -->
+                            <div class="flex items-center mt-[22px]">
+                                <div class="flex justify-center items-center w-12 h-12 rounded-full bg-[#FCEFFF]">
+                                    <img src="./src/icon/dev.svg" alt="">
+                                </div>
+
+                                <div class="ml-4">
+                                    <p class="text-text-color text-[1.4rem]">20 Courses</p>
+                                    <p class="text-[1.8rem] font-semibold text-secondary">Development</p>
+                                </div>
+                            </div>
+
+                            <!-- item3 -->
+                            <div class="flex items-center mt-[22px]">
+                                <div class="flex justify-center items-center w-12 h-12 rounded-full bg-[#EBEAFF]">
+                                    <img src="./src/icon/marketing.svg" alt="">
+                                </div>
+
+                                <div class="ml-4">
+                                    <p class="text-text-color text-[1.4rem]">30 Courses</p>
+                                    <p class="text-[1.8rem] font-semibold text-secondary">Marketing</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Hero right -->
+                    <div class="flex-1 pl-[130px] pt-[93px]">
+                        <h1 class="font-sen text-[58px] font-bold leading-[68px] -tracking-[1.16px] text-secondary ">
+                            Learn without limits and spread knowledge.</h1>
+                        <p class="mt-[22px] text-text-color text-[1.8rem] leading-[36px]">
+                            Build new skills for that "this is my year" feeling with courses, certificates,
+                            and degrees from world-class universities and companies.
+                        </p>
+
+                        <div class="flex items-center mt-[38px]">
+                            <a href="#!"
+                                class="min-w-[180px] px-[34px] leading-[64px] text-white text-[1.8rem] font-bold rounded-[32px] bg-[#FFB900] hover:opacity-10">See
+                                Courses</a>
+                            <button class="flex items-center ml-[28px] pl-[6px] hover:opacity-90">
+                                <div class="flex justify-center items-center w-10 h-10 rounded-full bg-white">
+                                    <img src="./src/icon/play.svg" alt="">
+                                </div>
+                                <span class="ml-[14px] text-[1.8rem] font-semibold text-secondary">Watch Video</span>
+                            </button>
+                        </div>
+
+                        <p class="mt-12 text-text-color text-[18px] font-normal ">Recent engagement</p>
+                        <div class="mt-2 flex gap-7">
+                            <div>
+                                <p class="text-[#171100] font-sen font-bold text-[44px]">50K <span
+                                        class="text-[#5F5B53] font-normal text-[18px] font-poppins">Students</span></p>
+                            </div>
+                            <div>
+                                <p class="text-[#171100] font-sen font-bold text-[44px]">70+ <span
+                                        class="text-[#5F5B53] font-normal text-[18px] font-poppins">Courses</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular -->
+        <div class="pt-[200px]">
+            <div class="max-w-main mx-auto">
+                <div class="flex items-center justify-between">
+
+                    <!-- Popular left -->
+                    <div class="w-[45%]">
+                        <h2 class="font-sen text-[38px] font-bold leading-[1.26] -tracking-[0.76] text-secondary">Our
+                            popular courses
+                        </h2>
+                        <p class="mt-4 text-[1.8rem] text-text-color leading-[1.67]">Build new skills with new trendy
+                            courses and shine for the next future career.</p>
+                    </div>
+
+                    <!-- Popular right -->
+                    <div class="flex gap-[18px]">
+                        <button
+                            class="flex justify-center items-center w-10 h-10 border border-[#FFB900] rounded-full text-[#FFB900] hover:bg-primary hover:text-white hover:border-primary">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button
+                            class="flex justify-center items-center w-10 h-10 border border-[#FFB900] rounded-full text-[#FFB900] hover:bg-primary hover:text-white hover:border-primary">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-[55px] flex gap-[30px]">
+                    <!-- Box 1 -->
+                    <div
+                        class="flex-1 rounded-[12px] border border-[#E2DFDA] hover:border-transparent hover:shadow-[0px_18px_36px_rgba(0,0,0,0.05)]">
+                        <a href="#!">
+                            <img src="./src/img/basicWebDesign.png" alt="Basic web design"
+                                class="w-full h-[278px] object-cover rounded-t-[12px]">
+                        </a>
+                        <div class="p-[22px]">
+                            <div class="flex items-center justify-between">
+                                <h3 class="flex-1">
+                                    <a href="#!"
+                                        class="text-[1.8rem] font-semibold text-secondary line-clamp-1 break-all hover:text-primary">Basic
+                                        web design</a>
+                                </h3>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="./src/icon/star.svg" alt="" class="w-[18px] h-[18px]">
+                                    <span class="text-[1.6rem] text-primary">4.5</span>
+                                </div>
+                            </div>
+                            <p class="mt-[6px] text-[1.4rem] text-text-color leading-[1.86] line-clamp-2 break-all">Get
+                                the best course, gain knowledge and shine for your future career.</p>
+                            <div class="mt-[12px] flex items-center justify-between">
+                                <span class="text-[1.8rem] font-semibold text-primary">$120.75</span>
+                                <button
+                                    class="min-w-[118px] px-[14px] leading-[50px] text-white text-[1.4rem] font-semibold rounded-[25px] bg-primary hover:opacity-90">Book
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box 2 -->
+                    <div
+                        class="flex-1 rounded-[12px] border border-[#E2DFDA] hover:border-transparent hover:shadow-[0px_18px_36px_rgba(0,0,0,0.05)]">
+                        <a href="#!">
+                            <img src="./src/img/uiUxDesign.png" alt="UI/UX design"
+                                class="w-full h-[278px] object-cover rounded-t-[12px]">
+                        </a>
+                        <div class="p-[22px]">
+                            <div class="flex items-center justify-between">
+                                <h3 class="flex-1">
+                                    <a href="#!"
+                                        class="text-[1.8rem] font-semibold text-secondary line-clamp-1 break-all hover:text-primary">UI/UX
+                                        design</a>
+                                </h3>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="./src/icon/star.svg" alt="" class="w-[18px] h-[18px]">
+                                    <span class="text-[1.6rem] text-primary">4.5</span>
+                                </div>
+                            </div>
+                            <p class="mt-[6px] text-[1.4rem] text-text-color leading-[1.86] line-clamp-2 break-all">Get
+                                the best course, gain knowledge and shine for your future career.</p>
+                            <div class="mt-[12px] flex items-center justify-between">
+                                <span class="text-[1.8rem] font-semibold text-primary">$120.75</span>
+                                <button
+                                    class="min-w-[118px] px-[14px] leading-[50px] text-white text-[1.4rem] font-semibold rounded-[25px] bg-secondary hover:opacity-90">Book
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box 3 -->
+                    <div
+                        class="flex-1 rounded-[12px] border border-[#E2DFDA] hover:border-transparent hover:shadow-[0px_18px_36px_rgba(0,0,0,0.05)]">
+                        <a href="#!">
+                            <img src="./src/img/webAppDesign.png" alt="Web App design"
+                                class="w-full h-[278px] object-cover rounded-t-[12px]">
+                        </a>
+                        <div class="p-[22px]">
+                            <div class="flex items-center justify-between">
+                                <h3 class="flex-1">
+                                    <a href="#!"
+                                        class="text-[1.8rem] font-semibold text-secondary line-clamp-1 break-all hover:text-primary">Web
+                                        App design</a>
+                                </h3>
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="./src/icon/star.svg" alt="" class="w-[18px] h-[18px]">
+                                    <span class="text-[1.6rem] text-primary">4.5</span>
+                                </div>
+                            </div>
+                            <p class="mt-[6px] text-[1.4rem] text-text-color leading-[1.86] line-clamp-2 break-all">Get
+                                the best course, gain knowledge and shine for your future career.</p>
+                            <div class="mt-[12px] flex items-center justify-between">
+                                <span class="text-[1.8rem] font-semibold text-primary">$120.75</span>
+                                <button
+                                    class="min-w-[118px] px-[14px] leading-[50px] text-white text-[1.4rem] font-semibold rounded-[25px] bg-secondary hover:opacity-90">Book
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback -->
+        <div class="mt-[200px] bg-[#2E2100] py-[96px]">
+            <div class="max-w-main mx-auto">
+                <div class="flex">
+
+                    <div class="flex justify-around gap-[240px]">
+
+                        <div class="w-[190px]">
+                            <img src="./src/img/Peeter Moore.png" alt="Peter Moor"
+                                class="inline-block w-[72px] h-[72px] rounded-full object-cover">
+                            <p class="mt-[18px] text-[2.4rem] text-white font-bold">Peter Moor</p>
+                            <p class="mt-1 text-[1.4rem] text-[#BFBCB2]">Student of Web Design</p>
+                            <div class="mt-7 flex gap-[6px]">
+                                <span class="w-[6px] h-[6px] rounded-full bg-[#634700]"></span>
+                                <span class="w-[6px] h-[6px] rounded-full bg-primary"></span>
+                                <span class="w-[6px] h-[6px] rounded-full bg-[#634700]"></span>
+                            </div>
+                        </div>
+
+                        <div class="w-[740px]">
+                            <img src="./src/icon/open-quote.svg" alt="" class=" -ml-14">
+                            <blockquote class="text-[26px] text-white font-normal leading-[40px] italic">Not only does
+                                my
+                                resume look impressive—filled with the names and logos of world-class institutions—but
+                                these certificates also bring me closer to my career goals by validating the skills I've
+                                learned."</blockquote>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Features 1 -->
+        <div class="mt-[200px]">
+            <div class="max-w-main mx-auto">
+                <div class="flex items-center gap-[130px]">
+
+                    <div class="relative w-[48%]">
+                        <img class="w-[270px] h-[404px] object-cover rounded-[16px]" src="./src/img/loto1.png"
+                            alt="Learner outcomes through our awesome platform">
+                        <img class="absolute right-0 top-[34px] w-[270px] h-[404px] object-cover rounded-[16px]"
+                            src="./src/img/loto2.png" alt="Learner outcomes through our awesome platform">
+                    </div>
+
+                    <div class="flex-1">
+                        <h2 class="font-sen text-[3.8rem] font-bold leading-[1.26] -tracking-[.76px] text-secondary">
+                            Learner outcomes
+                            through our awesome platform</h2>
+                        <p class="mt-4 text-[1.6rem] text-text-color leading-[1.75] w-[458px]">87% of people learning
+                            for
+                            professional development report career benefits like getting a promotion, a raise, or
+                            starting a new career.</p>
+                        <p class="mt-2 text-[1.6rem] text-text-color leading-[1.75]">Lesson Impact Report (2022)</p>
+                        <a href="#!"
+                            class="mt-[32px] inline-block min-w-[137px] px-[34px] leading-[50px] text-white text-[1.6rem] font-semibold rounded-[26px] bg-primary hover:opacity-90">Sign
+                            Up</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Features 2 -->
+        <div class="mt-[200px] pb-[200px]">
+            <div class="max-w-main mx-auto">
+                <div class="flex items-center gap-[130px]">
+                    <div class="flex-1">
+                        <h2 class="font-sen text-[3.8rem] font-bold leading-[1.26] text-secondary  -tracking-[.76px]">
+                            Take the next step
+                            toward your personal and professional goals with Lesson.</h2>
+                        <p class="mt-4 text-[1.6rem] text-text-color leading-[1.75]">Take the next step toward. Join now
+                            to receive personalized and more recommendations from the full Coursera catalog.</p>
+                        <a href="#!"
+                            class="mt-[18px] inline-block min-w-[137px] px-[34px] leading-[50px] text-white text-[1.6rem] font-semibold rounded-[26px] bg-primary hover:opacity-90">Join
+                            Now</a>
+                    </div>
+                    <div class="w-[470px]">
+                        <img src="./src/img/takeTheNextStep.png"
+                            alt="Take the next step toward your personal and professional goals with Lesson."
+                            class="w-full h-[440px] object-cover rounded-[20px]">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blogs -->
+        <div class="py-24  bg-[#fffcf4]">
+            <div class="max-w-main mx-auto">
+                <div class="text-center">
+                    <h2 class="font-sen text-[3.8rem] font-bold leading-[1.26] text-secondary">Our blog</h2>
+                    <p class="mt-4 text-[1.6rem] text-text-color leading-[1.75]">Read our regular travel blog and know
+                        the latest update of tour and travel</p>
+                </div>
+
+                <div class="mt-[55px] grid grid-cols-3 gap-[30px]">
+
+                    <!-- Box 1 -->
+                    <div class="rounded-[16px] bg-white hover:shadow-[0px_16px_32px_rgba(0,0,0,0.05)]">
+                        <a href="#!">
+                            <img src="./src/img/ourBlog1.png"
+                                alt="How to become a pro web designer in 2022 and get remot job?"
+                                class="w-full h-[250px] object-cover rounded-t-[16px]">
+                        </a>
+                        <div class="p-[20px]">
+                            <div class="flex items-center">
+                                <span class="w-[6px] h-[6px] rounded-full bg-primary"></span>
+                                <p class="relative text-[1.4rem] text-text-color  pl-1">21
+                                    November 2021</p>
+                            </div>
+                            <hr class="w-[160px] mt-3">
+                            <h3 class="mt-[25px]">
+                                <a href="http://tuhoc.cc"
+                                    class="text-[1.6rem] font-semibold text-secondary leading-[1.75] hover:text-primary">How
+                                    to become a pro web designer in 2022 and get remot job?</a>
+                            </h3>
+                            <a href="#!"
+                                class="mt-3 inline-block text-[1.4rem] text-white font-semibold px-[21px] leading-[50px] rounded-[25px] bg-primary hover:opacity-90">Read
+                                More</a>
+                        </div>
+                    </div>
+
+                    <!-- Box 2 -->
+                    <div class="rounded-[16px] bg-white hover:shadow-[0px_16px_32px_rgba(0,0,0,0.05)]">
+                        <a href="#!">
+                            <img src="./src/img/ourBlog1.png"
+                                alt="How to become a pro web designer in 2022 and get remot job?"
+                                class="w-full h-[250px] object-cover rounded-t-[16px]">
+                        </a>
+                        <div class="p-[20px]">
+                            <div class="flex items-center">
+                                <span class="w-[6px] h-[6px] rounded-full bg-primary"></span>
+                                <p class="relative text-[1.4rem] text-text-color  pl-1">21
+                                    November 2021</p>
+                            </div>
+                            <hr class="w-[160px] mt-3">
+                            <h3 class="mt-[25px]">
+                                <a href="http://tuhoc.cc"
+                                    class="text-[1.6rem] font-semibold text-secondary leading-[1.75] hover:text-primary">How
+                                    to become a pro web designer in 2022 and get remot job?</a>
+                            </h3>
+                            <a href="#!"
+                                class="mt-3 inline-block text-[1.4rem] text-white font-semibold px-[21px] leading-[50px] rounded-[25px] bg-secondary hover:opacity-90">Read
+                                More</a>
+                        </div>
+                    </div>
+
+                    <!-- Box 3 -->
+                    <div class="rounded-[16px] bg-white hover:shadow-[0px_16px_32px_rgba(0,0,0,0.05)]">
+                        <a href="#!">
+                            <img src="./src/img/ourBlog1.png"
+                                alt="How to become a pro web designer in 2022 and get remot job?"
+                                class="w-full h-[250px] object-cover rounded-t-[16px]">
+                        </a>
+                        <div class="p-[20px]">
+                            <div class="flex items-center">
+                                <span class="w-[6px] h-[6px] rounded-full bg-primary"></span>
+                                <p class="relative text-[1.4rem] text-text-color  pl-1">21
+                                    November 2021</p>
+                            </div>
+                            <hr class="w-[160px] mt-3">
+                            <h3 class="mt-[25px]">
+                                <a href="http://tuhoc.cc"
+                                    class="text-[1.6rem] font-semibold text-secondary leading-[1.75] hover:text-primary">How
+                                    to become a pro web designer in 2022 and get remot job?</a>
+                            </h3>
+                            <a href="#!"
+                                class="mt-3 inline-block text-[1.4rem] text-white font-semibold px-[21px] leading-[50px] rounded-[25px] bg-secondary hover:opacity-90">Read
+                                More</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="mt-[38px] flex justify-center gap-[6px]">
+                    <span class="w-[6px] h-[6px] rounded-full bg-[#634700]"></span>
+                    <span class="w-[6px] h-[6px] rounded-full bg-primary"></span>
+                    <span class="w-[6px] h-[6px] rounded-full bg-[#634700]"></span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary pb-[28px]">
+        <div class="max-w-main mx-auto">
+            <div class="flex justify-between pt-24 pb-[38px]">
+
+                <!-- column 1 -->
+                <div class="w-[267px]">
+                    <h4 class="text-white font-sen text-2xl font-bold">Lesson<span>.</span></h4>
+                    <p class="mt-[18px] text-[1.4rem] text-[#BFBCB2] leading-[1.86]">Need to help for your dream Career?
+                        trust us. With Lesson, study becomes a lot easier with us.</p>
+                    <div class="mt-[18px] flex gap-[18px]">
+                        <a href="" class="flex justify-center items-center ">
+                            <img src="./assets/icon/twitter.svg" alt="twitter" class="w-[15px] h-[15px]">
+                        </a>
+                        <a href="" class="flex justify-center items-center ">
+                            <img src="./assets/icon/fb.svg" alt="facebook" class="w-[15px] h-[15px]">
+                        </a>
+                        <a href="" class="flex justify-center items-center ">
+                            <img src="./assets/icon/linkedin.svg" alt="linkedin" class="w-[15px] h-[15px]">
+                        </a>
+                        <a href="" class="flex justify-center items-center ">
+                            <img src="./assets/icon/instagram.svg" alt="instagram" class="w-[15px] h-[15px]">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- column 2 -->
+                <div class="w-[130px]">
+                    <h3 class="text-white  font-semibold leading-[1.75]">Company</h3>
+                    
+                    <hr class="mb-[27px] mt-[14px] w-[130px] border-t-[1px] border-[#59554B]">
+                    
+                    <ul class="space-y-[12px] ">
+                        <li>
+                            <a href="#!" class="text-[1.4rem] text-[#BFBCB2] hover:text-white">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-[1.4rem] text-[#BFBCB2] hover:text-white">Features</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-[1.4rem] text-[#BFBCB2] hover:text-white">Our Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-[1.4rem] text-[#BFBCB2] hover:text-white">Latest News</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- column 3 -->
+                <div class="w-[140px]">
+                    <h3 class="text-white text-[16px] font-semibold leading-[1.75]">Support</h3>
+                    
+                    <hr class="mb-[27px] mt-[14px] w-[130px] border-t-[1px] border-[#59554B]">
+                    
+                    <ul class="space-y-[12px]">
+                        <li>
+                            <a href="#!" class="text-[1.4rem] text-[#BFBCB2] hover:text-white">FAQ's</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-[1.4rem] text-[#BFBCB2] hover:text-white">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-[1.4rem] text-[#BFBCB2] hover:text-white">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-[1.4rem] text-[#BFBCB2] hover:text-white">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- column 4 -->
+                <div class="w-[230px]">
+                    <h3 class="text-white text-[16px] font-semibold leading-[1.75]">Address</h3>
+
+                    <hr class="mb-[27px] mt-[14px] w-[130px] border-t-[1px] border-[#59554B]">
+                    
+                    <ul class="space-y-[12px]">
+                        <li>
+                            <a href="#!" class="text-[1.4rem] text-[#BFBCB2] hover:text-white"><strong
+                                    class="text-white font-semibold">Location:</strong> 27 Division St, New York, NY
+                                10002, USA</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-[1.4rem] text-[#BFBCB2] hover:text-white"><strong
+                                    class="text-white font-semibold">Email:</strong> email@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-[1.4rem] text-[#BFBCB2] hover:text-white"><strong
+                                    class="text-white font-semibold">Phone:</strong> + 000 1234 567 890</a>
+                        </li>
+                    </ul>
+                </div>
+            
+            </div>
+
+            <div class="pt-[38px] border-t border-[#59554B]">
+                <p class="text-center text-[1.4rem] text-[#BFBCB2]">Copyright ©2022 webdesign.gdn All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

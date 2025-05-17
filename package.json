@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  },
+  "name": "rrfeducation---tailwind",
+  "version": "1.0.0",
+  "description": "\"#RRF-Education Figma Theme with HTML and CSS\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moudud-hoq/RRF-Education.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moudud-hoq/RRF-Education/issues"
+  },
+  "homepage": "https://github.com/moudud-hoq/RRF-Education#readme"
+}
